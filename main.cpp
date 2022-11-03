@@ -12,5 +12,29 @@ int main(){
 
     cout << "Second Digit : ";
     cin >> num2;
+
+
+    int answer;
+    // Performing the calculation on the basis of given operation.
+    switch (operation){
+    
+    case '-':
+        answer = num1 - num2;
+        break;
+    
+    case '*':
+        answer = num1 * num2;
+        break;
+    
+    case '/':
+        answer = num1 / num2;
+        break;
+    
+    default:
+        answer = num1 + num2;
+        break;
+    }
+
+    cout<<answer<<endl;
     return 0;
 }
