@@ -7,7 +7,7 @@ int main(){
     cout << "First Digit : ";
     cin >> num1;
 
-    cout << "Operation (+ , - , * , /) : ";
+    cout << "Operation (+ , - , * , / , ^) : ";
     cin >> operation;
 
     cout << "Second Digit : ";
@@ -29,7 +29,15 @@ int main(){
     case '/':
         answer = num1 / num2;
         break;
-    
+
+    case '^':
+        answer = 1;
+        for (int i = 0; i < num2; i++)
+        {
+            answer *= num1;
+        }
+        break;
+        
     default:
         answer = num1 + num2;
         break;
